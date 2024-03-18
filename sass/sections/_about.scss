@@ -1,0 +1,46 @@
+#about {
+    padding-top: 70px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 98px;
+        gap: 48px;
+
+        &__left {
+            width: 768px;
+            p {
+                color: var(--gray600);
+            }
+
+            &__info {
+                margin-top: 48px;
+
+                &__list {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+
+            &__social {
+                margin-top: 48px;
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+                cursor: pointer;
+            }
+        }
+        &__right {
+            img{
+             filter: drop-shadow(30px 30px var(--gray50));
+             cursor: pointer;
+
+            }
+        }
+    }
+    
+}

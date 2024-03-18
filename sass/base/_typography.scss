@@ -5,6 +5,21 @@ a {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+    color: var(--gray600);
+}
+
+li {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--gray600);
+}
+a:hover {
+    color: var(--blue45);
+    text-decoration: underline;
 }
 
 h1 {
@@ -16,7 +31,14 @@ h1 {
     text-align: left;
 }
 
-
+h3 {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
 
 p {
     font-family: Inter;
@@ -26,34 +48,38 @@ p {
     letter-spacing: 0em;
     text-align: left;
 }
-
-@media only screen and (max-width: 768px) {
- h1 {
-    font-size: 48px;
-    line-height: 48px;
-    
- }   
- p {
-    font-weight: 400px;
-
- }
-   
+small {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
 }
 
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+        
+    }
+    p {
+        font-weight: 400px;
+    }
+}
 
 @media only screen and (max-width: 568px) {
-      
-    
     h1 {
-       font-size: 46px;
-       line-height: 48px;
-       
-    }   
+        font-size: 46px;
+        line-height: 48px;
+    }
     p {
-       font-size: 14px;
+        font-size: 14px;
         font-weight: 400px;
         line-height: 20px;
-
     }
-      
-   }
+}

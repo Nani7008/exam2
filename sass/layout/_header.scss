@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // gap: 555px;
+
     margin: 16px 32px;
     justify-content: space-between;
 
@@ -76,10 +76,6 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-  // .nav {
-  //   gap: 5px;
-  // }
-
   .nav__right__list__items,
   .nav__right__bts__items {
     display: none;
@@ -88,6 +84,3 @@ header {
     display: block;
   }
 }
-
-
-

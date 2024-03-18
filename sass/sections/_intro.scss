@@ -12,9 +12,6 @@
 
         &__left {
             width: 778px;
-            p {
-                color: var(--gray600);
-            }
 
             &__info {
                 margin-top: 48px;
@@ -48,8 +45,7 @@
     #intro {
         padding-bottom: 64px;
     }
-    
-    
+
     #intro .wrapper {
         margin-top: 20px;
         gap: 10px;

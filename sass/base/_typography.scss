@@ -1,85 +1,91 @@
 a {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--gray600);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gray600);
 }
 
 li {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--gray600);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gray600);
 }
 a:hover {
-    color: var(--blue45);
-    text-decoration: underline;
+  color: var(--blue45);
+  text-decoration: underline;
 }
 
 h1 {
-    font-family: Inter;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 72px;
-    letter-spacing: -0.02em;
-    text-align: left;
+  font-family: Inter;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  text-align: left;
 }
 
 h3 {
-    font-family: Inter;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 36px;
-    letter-spacing: -0.02em;
-    text-align: left;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: left;
 }
 
 p {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gray600);
 }
 small {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  background-color: var(--gray200);
+  border-radius: 12px;
+  color: var(--gray600);
+  cursor: pointer;
+ padding: 4px 20px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 48px;
-        line-height: 48px;
-    }
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
 
-    h3 {
-        font-size: 24px;
-        line-height: 32px;
-        
-    }
-    p {
-        font-weight: 400px;
-    }
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  p {
+    font-weight: 400px;
+  }
 }
 
 @media only screen and (max-width: 568px) {
-    h1 {
-        font-size: 46px;
-        line-height: 48px;
-    }
-    p {
-        font-size: 14px;
-        font-weight: 400px;
-        line-height: 20px;
-    }
+  h1 {
+    font-size: 46px;
+    line-height: 48px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 20px;
+  }
 }

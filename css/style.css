@@ -393,6 +393,7 @@ p {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+  color: var(--gray600);
 }
 
 small {
@@ -401,6 +402,12 @@ small {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0em;
+  background-color: var(--gray200);
+  border-radius: 12px;
+  color: var(--gray600);
+  cursor: pointer;
+  padding: 4px 20px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -517,9 +524,6 @@ header .nav__right__bts .bx-menu {
 #intro .wrapper__left {
   width: 778px;
 }
-#intro .wrapper__left p {
-  color: var(--gray600);
-}
 #intro .wrapper__left__info {
   margin-top: 48px;
 }
@@ -576,15 +580,6 @@ header .nav__right__bts .bx-menu {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-#about .wrapper small {
-  background-color: var(--gray200);
-  border-radius: 12px;
-  color: var(--gray600);
-  cursor: pointer;
-  width: 105px;
-  height: 28px;
-  text-align: center;
 }
 #about .wrapper__context {
   margin-top: 48px;

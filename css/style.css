@@ -10,6 +10,7 @@
   --gray600: #4B5563;
   --gray200: #E5E7EB;
   --gray50: #F9FAFB;
+  --white: #ffff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -883,5 +884,57 @@ header .nav__right__bts .bx-menu {
   #work .wrapper .bigcard .bigcard__info img {
     width: 36px;
     height: 36px;
+  }
+}
+#testimonials {
+  padding: 96px 0;
+  background-color: var(--gray50);
+}
+#testimonials .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#testimonials .wrapper .cards {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+#testimonials .wrapper .cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  width: 373px;
+  height: 428px;
+  padding: 48px 48px 96px;
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.0705882353);
+  border-radius: 12px;
+  cursor: pointer;
+}
+#testimonials .wrapper .cards__item-text {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 277px;
+  min-height: 168px;
+}
+
+@media only screen and (max-width: 968px) {
+  #testimonials .wrapper .cards {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 568px) {
+  #testimonials .wrapper .cards__item {
+    width: 343px;
+    height: 348px;
+  }
+  #testimonials .wrapper .cards__item:last-child {
+    height: 396px;
+  }
+  #testimonials .wrapper .cards__item-text {
+    min-height: auto;
   }
 }/*# sourceMappingURL=style.css.map */

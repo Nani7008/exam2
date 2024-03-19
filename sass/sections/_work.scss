@@ -1,0 +1,124 @@
+#work {
+    padding: 96px 0;
+    
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .smallheading {
+            margin-top: 16px;
+        }
+    
+        .bigcard {
+            display: flex;
+            margin-top: 48px;
+            width: 1152;
+            height: 480px;
+            border-radius: 12px;
+             border: 0px 1px 0px 0px;
+             border-right: 1px solid #F3F4F6;
+             box-shadow: 0px 10px 8px 0px #0000000A;
+
+
+
+
+            &__image {
+                width: 576px;
+                padding: 48px;
+                background-color: var(--gray50);
+            }
+
+            &__info {
+                width: 576px;
+                padding: 48px 48px 100px;
+
+                p{
+                    margin-top: 24px;
+                }
+
+                &__skills {
+                    margin-top: 24px;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    grid-column-gap: 8px;
+                    grid-row-gap: 8px;
+                    margin-bottom: 24px;
+                    
+                        
+                }
+            }
+        }
+
+        
+
+
+    }
+
+
+}
+
+@media only screen and (max-width: 968px){
+    #work {
+        padding: 64px 0;
+
+    }
+
+    #work .wrapper .bigcard {
+        flex-direction: column;
+       height: auto;
+    }
+
+#work .wrapper .bigcard__info {
+order: 2;
+}
+
+}
+
+@media only screen and (max-width: 568px) {
+    #work .wrapper .bigcard{
+    width: 343px;
+    height: 910px;
+
+}
+
+#work .wrapper .bigcard__image{
+    width: 333px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#work .wrapper .bigcard img {
+    width: 324px;
+    height: 282px;
+}
+
+#work .wrapper .bigcard .bigcard__info {
+    width: 343px;
+    height: 516px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    
+}
+#work .wrapper .bigcard .bigcard__info__skills {
+                    margin-top: 24px;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(6, 1fr);
+                    grid-column-gap: 8px;
+                    grid-row-gap: 8px;
+                    margin-bottom: 0px;
+                } 
+
+#work .wrapper .bigcard .bigcard__info img {
+    width: 36px;
+    height: 36px;
+}
+
+}

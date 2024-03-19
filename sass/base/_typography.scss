@@ -49,6 +49,17 @@ h3 {
   text-align: left;
 }
 
+h4 {
+ 
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 28px;
+text-align: left;
+color: var(gray900);
+
+}
+
 p {
   font-family: Inter;
   font-size: 16px;
@@ -58,6 +69,19 @@ p {
   text-align: left;
   color: var(--gray600);
 }
+
+h6 {
+   
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: var(--gray600);
+  
+    }
+
+
 small {
   font-family: Inter;
   font-size: 16px;
@@ -82,6 +106,8 @@ small {
     font-size: 24px;
     line-height: 32px;
   }
+
+ 
   p {
     font-weight: 400px;
   }
@@ -101,5 +127,5 @@ small {
 
 @media only screen and (max-width: 568px)
 {
-  
+
 }

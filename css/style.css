@@ -686,6 +686,6 @@ header .nav__right__bts .bx-menu {
 @media only screen and (max-width: 368px) {
   #skills .wrapper .wrapper__context {
     grid-row-gap: 16px;
-    grid-column-gap: 25px;
+    grid-column-gap: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

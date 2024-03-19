@@ -1,0 +1,32 @@
+.longcard {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 896px;
+    height: 288px;
+    background-color: #fff;
+    margin-top: 48px;
+    padding: 32px;
+    border-radius: 32px;
+    box-shadow: 0px 2px 2px 0px #0000000f;
+    cursor: pointer;
+
+    &__context {
+      display: flex;
+      flex-direction: column;
+      list-style: disc;
+      gap: 4px;
+      width: 384px;
+
+      span {
+        margin-bottom: 16px;
+      }
+      &__items {
+        transform: translateX(25px);
+      }
+      
+    }
+  }
+  .longcard:last-child {
+    height: 180px;
+  }

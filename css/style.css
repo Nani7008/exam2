@@ -353,6 +353,14 @@ a {
   color: var(--gray600);
 }
 
+span {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
 li {
   font-family: Inter;
   font-size: 16px;
@@ -509,6 +517,37 @@ header .nav__right__bts .bx-menu {
     display: block;
   }
 }
+.longcard {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 896px;
+  height: 288px;
+  background-color: #fff;
+  margin-top: 48px;
+  padding: 32px;
+  border-radius: 32px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.0588235294);
+  cursor: pointer;
+}
+.longcard__context {
+  display: flex;
+  flex-direction: column;
+  list-style: disc;
+  gap: 4px;
+  width: 384px;
+}
+.longcard__context span {
+  margin-bottom: 16px;
+}
+.longcard__context__items {
+  transform: translateX(25px);
+}
+
+.longcard:last-child {
+  height: 180px;
+}
+
 #intro {
   padding-top: 70px;
   padding-bottom: 96px;
@@ -661,7 +700,7 @@ header .nav__right__bts .bx-menu {
 
 @media only screen and (max-width: 968px) {
   #skills {
-    padding-top: 64px;
+    padding: 64px 0;
   }
   #skills .wrapper .wrapper__context {
     grid-template-columns: repeat(4, 1fr);
@@ -687,5 +726,50 @@ header .nav__right__bts .bx-menu {
   #skills .wrapper .wrapper__context {
     grid-row-gap: 16px;
     grid-column-gap: 15px;
+  }
+}
+#expireince {
+  background-color: var(--gray50);
+  padding: 96px 0;
+}
+#expireince .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#expireince .wrapper small {
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 968px) {
+  #expireince .wrapper .longcard {
+    width: 756px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #expireince .wrapper .longcard {
+    width: 746px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  #expireince .wrapper .longcard {
+    flex-direction: column;
+    width: 343px;
+    height: 377px;
+    margin-top: 24px;
+    padding: 32px;
+  }
+  #expireince .wrapper .longcard:last-child {
+    height: 288px;
+  }
+  #expireince .wrapper .longcard__context {
+    width: 279px;
+    order: 3;
+  }
+  #expireince .wrapper .longcard__context__items {
+    transform: translateX(17px);
   }
 }/*# sourceMappingURL=style.css.map */

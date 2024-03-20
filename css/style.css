@@ -1,7 +1,37 @@
 @font-face {
-  font-family: Inter;
-  src: url(../../public/fonts/Inter/static/Inter-Bold.ttf);
+  font-family: "Inter";
+  src: url("../../public/fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
+@font-face {
+  font-family: "Inter";
+  src: url("../../public/fonts/Inter/static/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../public/fonts/Inter/static/Inter-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../public/fonts/Inter/static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../public/fonts/Inter/static/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
 :root {
   --gray900: #111827;
   --gray50: #F9FAFB;
@@ -11,6 +41,9 @@
   --gray200: #E5E7EB;
   --gray50: #F9FAFB;
   --white: #ffff;
+  --0407: #040711;
+  --1218: #121826;
+  --2129: #212936;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -328,6 +361,7 @@ template {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 a {
@@ -374,7 +408,6 @@ li {
 
 a:hover {
   color: var(--blue45);
-  text-decoration: underline;
 }
 
 h1 {
@@ -384,6 +417,21 @@ h1 {
   line-height: 72px;
   letter-spacing: -0.02em;
   text-align: left;
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--gray900);
+  text-decoration: none;
+}
+
+h2:hover {
+  color: var(--blue45);
 }
 
 h3 {
@@ -407,7 +455,7 @@ h4 {
 p {
   font-family: Inter;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
@@ -526,13 +574,11 @@ header .nav__right__list {
   align-items: center;
   gap: 24px;
 }
-header .nav__right__list a {
-  color: var(--gray600);
+header .nav__right__list__items {
   transition: all 4ms;
 }
-header .nav__right__list a:hover {
+header .nav__right__list__items:hover {
   color: var(--blue45);
-  text-decoration: underline;
 }
 header .nav__right__bts {
   display: flex;
@@ -570,6 +616,80 @@ header .nav__right__bts .bx-menu {
   }
   header .nav .bx-menu {
     display: block;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: var(--0407);
+  }
+  header .bx-sun {
+    color: var(--white);
+  }
+  #intro {
+    background-color: var(--0407);
+  }
+  #intro .wrapper .wrapper__right img {
+    filter: drop-shadow(30px 30px var(--gray600));
+  }
+  footer {
+    background-color: black;
+  }
+  #work .cards__item {
+    background-color: var(--2129);
+  }
+  :root h1 {
+    color: var(--white);
+  }
+  :root h2 {
+    color: var(--white);
+  }
+  :root h3 {
+    color: var(--white);
+  }
+  :root h4 {
+    color: var(--white);
+  }
+  :root p {
+    color: var(--white);
+  }
+  :root a {
+    color: var(--white);
+  }
+  :root li {
+    color: var(--white);
+  }
+  :root #about {
+    background-color: var(--1218);
+  }
+  :root #about .wrapper__context__left img {
+    filter: drop-shadow(-30px 30px var(--gray600));
+  }
+  :root footer {
+    background-color: var(--0407);
+  }
+  :root #expireince {
+    background-color: var(--1218);
+  }
+  :root #testimonials {
+    background-color: var(--1218);
+  }
+  :root #testimonials .cards__item {
+    background-color: var(--2129);
+  }
+  :root #expireince .longcard {
+    background-color: var(--2129);
+  }
+  :root span {
+    color: var(--white);
+  }
+  :root #skills {
+    background-color: var(--0407);
+  }
+  :root #work {
+    background-color: var(--0407);
+  }
+  :root #work .bigcard {
+    background-color: #212936;
   }
 }
 .longcard {

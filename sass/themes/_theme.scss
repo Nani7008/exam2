@@ -1,0 +1,93 @@
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: var(--0407);
+
+        .bx-sun {
+            color: var(--white);
+        }
+    }
+
+    #intro {
+        background-color: var(--0407);
+    }
+
+    #intro .wrapper .wrapper__right img {
+        filter: drop-shadow(30px 30px var(--gray600));
+    }
+    footer {
+        background-color: black;
+    }
+
+    #work .cards__item {
+        background-color: var(--2129);
+    }
+
+    :root {
+        h1 {
+            color: var(--white);
+        }
+        h2 {
+            color: var(--white);
+        }
+        h3 {
+            color: var(--white);
+        }
+
+        h4 {
+            color: var(--white);
+        }
+        p {
+            color: var(--white);
+        }
+        a {
+            color: var(--white);
+        }
+        li {
+            color: var(--white);
+        }
+
+        #about {
+            background-color: var(--1218);
+        }
+        #about .wrapper__context__left img {
+            filter: drop-shadow(-30px 30px var(--gray600));
+        }
+
+        footer {
+            background-color: var(--0407);
+        }
+
+        #expireince {
+            background-color: var(--1218); 
+        }
+
+        #testimonials {
+            background-color: var(--1218);
+
+            .cards__item {
+                background-color: var(--2129);
+            }
+        }
+        
+
+        #expireince .longcard {
+            background-color: var(--2129);
+        }
+
+        span {
+            color: var(--white);
+        }
+        #skills {
+            background-color: var(--0407);
+        }
+
+        #work {
+            background-color: var(--0407);
+
+            .bigcard {
+                background-color: #212936;
+            }
+        }
+        
+    }
+}

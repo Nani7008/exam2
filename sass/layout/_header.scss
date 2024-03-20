@@ -28,13 +28,12 @@ header {
         align-items: center;
         gap: 24px;
 
-        a {
-          color: var(--gray600);
+        &__items {
           transition: all 4ms;
 
           &:hover {
             color: var(--blue45);
-            text-decoration: underline;
+            // text-decoration: underline;
           }
         }
       }
@@ -69,18 +68,21 @@ header {
           font-size: 36px;
           cursor: pointer;
           display: none;
+          
         }
       }
     }
   }
 }
 
+
+
 @media only screen and (max-width: 768px) {
   .nav__right__list__items,
   .nav__right__bts__items {
     display: none;
   }
-  header .nav .bx-menu {
+header .nav .bx-menu {
     display: block;
   }
 }

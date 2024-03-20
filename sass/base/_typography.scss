@@ -28,7 +28,7 @@ li {
 }
 a:hover {
   color: var(--blue45);
-  text-decoration: underline;
+ 
 }
 
 h1 {
@@ -38,6 +38,22 @@ h1 {
   line-height: 72px;
   letter-spacing: -0.02em;
   text-align: left;
+}
+h2{
+font-family: Inter;
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: -0.02em;
+text-align: center;
+color: var(--gray900);
+text-decoration: none;
+
+}
+
+h2:hover {
+  color: var(--blue45);
+
 }
 
 h3 {
@@ -63,7 +79,7 @@ color: var(gray900);
 p {
   font-family: Inter;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;

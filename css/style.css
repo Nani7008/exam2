@@ -488,6 +488,9 @@ small {
   padding: 4px 20px;
   text-align: center;
 }
+small:hover {
+  color: var(--blue45);
+}
 
 @media only screen and (max-width: 768px) {
   h1 {
@@ -734,6 +737,7 @@ header .nav__right__bts .bx-menu {
   border-radius: 32px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.0588235294);
   cursor: pointer;
+  transition: all ease-out;
 }
 .longcard__context {
   display: flex;
@@ -747,6 +751,9 @@ header .nav__right__bts .bx-menu {
 }
 .longcard__context__items {
   transform: translateX(25px);
+}
+.longcard:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .longcard:last-child {
@@ -784,6 +791,9 @@ header .nav__right__bts .bx-menu {
   grid-row-gap: 8px;
   margin-bottom: 24px;
 }
+.bigcard:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 
 .cards {
   margin-top: 48px;
@@ -809,6 +819,9 @@ header .nav__right__bts .bx-menu {
   margin-bottom: 24px;
   width: 277px;
   min-height: 168px;
+}
+.cards__item:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 #intro {

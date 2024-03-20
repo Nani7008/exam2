@@ -115,6 +115,10 @@ small {
   cursor: pointer;
  padding: 4px 20px;
   text-align: center;
+
+  &:hover{
+   color: var(--blue45);
+  }
 }
 
 @media only screen and (max-width: 768px) {

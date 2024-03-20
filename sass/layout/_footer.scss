@@ -1,5 +1,5 @@
 footer {
-    padding: 96px 0;
+    padding-top: 96px;
 
     .wrapper {
         display: flex;
@@ -24,12 +24,44 @@ footer {
             gap: 10px;
         }
     }
+
+    #footerbottom {
+       margin-top: 96px;
+        width: 100%;
+        height: 68px;
+        background-color: var(--gray50);
+        display: flex;
+        align-items: center;
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 8px;
+           
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
 
     footer {
         padding: 64px 0;
+
+        #footerbottom {
+            .wrapper{
+                justify-content: start;
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+                p{
+                    font-size: 10px;
+                }
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
     }
 
     footer .smallheading {
